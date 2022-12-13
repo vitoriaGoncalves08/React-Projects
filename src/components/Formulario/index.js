@@ -18,10 +18,10 @@ const Formulario = (props) => {
       imagem,
       time,
     });
-    setNome("");
-    setCargo("");
-    setImagem("");
-    setTime("");
+    setNome('');
+    setCargo('');
+    setImagem('');
+    setTime('');
   };
 
   return (
@@ -53,7 +53,7 @@ const Formulario = (props) => {
           obrigatorio={true}
           label="Time"
           itens={props.times}
-          value={time}
+          valor={time}
           aoAlterado={(valor) => setTime(valor)}
         />
         <Botao>Criar Card</Botao>
